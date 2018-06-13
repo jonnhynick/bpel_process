@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions name="Assignment03"
+         xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         targetNamespace ="http://tempuri.org"
+         xmlns:crypto="http://neptune.fulton.ad.asu.edu/WSRepository/Services/EncryptionWcf/Service.svc?wsdl"
+         xmlns:fileIO="http://neptune.fulton.ad.asu.edu/WSRepository/Services/FileService/Service.svc?wsdl"
+         xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+  
+  <plnk:partnerLinkType name="Decrypt">
+    <plnk:role name="DecryptInput">
+      <plnk:portType name="tns:IService_Decrypt_InputMessage"/>
+    </plnk:role>
+    <plnk:role name ="DecryptCallback">
+      <plnk:portType name="tns:IService_Decrypt_OutputMessage"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <plnk:partnerLinkType name="Encrypt">
+    <plnk:role name="EncryptInput">
+      <plnk:portType name="tns:IService_Encrypt_InputMessage"/>
+    </plnk:role>
+    <plnk:role name="EncryptCallback">
+      <plnk:portType name="tns:IService_Encrypt_OutputMessage"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <plnk:partnerLinkType name="PutStringToFile">
+    <plnk:role name="PutString">
+      <plnk:portType name="tns:IService_PutStringToFile_InputMessage"/>
+    </plnk:role>
+    <plnk:role name="PutStringCallback">
+      <plnk:portType name="tns:IService_PutStringToFile_OutputMessage"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <plnk:partnerLinkType name="GetStringFromFile">
+    <plnk:role name="GetString">
+      <plnk:portType name="tns:IService_GetStringFromFile_InputMessage"/>
+    </plnk:role>
+    <plnk:role name="GetStringCallback">
+      <plnk:portType name="tns:IService_GetStringFromFile_OutputMessage"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  
+</definitions>

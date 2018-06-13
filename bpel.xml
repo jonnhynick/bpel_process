@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<process name="Assignment03"
+         xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:crypto="http://neptune.fulton.ad.asu.edu/WSRepository/Services/EncryptionWcf/Service.svc?wsdl"
+         xmlns:fileIO="http://neptune.fulton.ad.asu.edu/WSRepository/Services/FileService/Service.svc?wsdl"
+         xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+
+  <partnerLinks>
+    <!-- The declaration of partner links -->
+  </partnerLinks>
+
+  <variables>
+    <!-- The declaration of variables -->
+  </variables>
+
+  <sequence>
+    <!-- The definition of the BPEL business process main body -->
+  </sequence>
+
+</process>
